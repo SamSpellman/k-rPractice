@@ -1,0 +1,4 @@
+# Ignore any executable files
+*.out
+
+
