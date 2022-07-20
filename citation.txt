@@ -1,0 +1,5 @@
+citation:
+Kernighan, Brian W., & Ritchie, Dennis M. (1988). The C Programming Language (Second Edition). Bell Telephone Laboratories, Incorporated.
+
+This is the citation for the reference material, and it will be used in the 
+code as well. 
