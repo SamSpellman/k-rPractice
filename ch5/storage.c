@@ -29,7 +29,8 @@ int strlen(char *s)
 
 	while (*p != '\0') // Dereferencing p to get the char held
 		p++;
-	return p - s;
+	return p - s; // In a professional setting, you could use size_t
+	// size_t is an unsigned int, and the standard library return for sizeof
 }
 
 
