@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+//---------------------------CODE FROM THE K&R------------------------------
+
 /* strcmp: return <0 if s<t, 0 if s==t, >0 if s>t */
 int strcmp(char *s, char *t) 
 {

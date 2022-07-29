@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+//----------------------CODE FROM THE K&R---------------------------------
+
 #define ALLOCSIZE 10000 /* available for our storage allocator */
 
 static char allocbuf[ALLOCSIZE]; /* storage array that we will be using */
