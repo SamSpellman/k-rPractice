@@ -10,19 +10,23 @@
 void iterReturn (char *storeIn, char *toStore)
 {
 	// Iterate over the the toStore string
-	while(*toStore != '\0' && (*storeIn++ = *toStore++))
+	while(*storeIn++ || *storeIn++ = *toStore)
 		;
+		
 }
 
 char *strcatPersonal(char *start, char *end) 
 {
-	// Try to achieve it in an effective manner
-	//while(*(strlen(start) + start++)
-	char *toReturn = (char*) malloc(100);
+	// Use malloc to allocate size for both string and '\0'
+	char *toReturn = (char*) malloc(strlen(start)+strlen(end)+1);
+	
+	// call iterReturn for both strings
 	iterReturn(toReturn, start);
-	printf("%ld", strlen(start));
-	printf("%s", toReturn);
-	return("akdlsfj");
+	iterReturn(toReturn, end);
+
+	// toReturn[strlen(toReturn)] = '\0';
+
+	return(toReturn);
 }
 
 int main()
@@ -31,5 +35,5 @@ int main()
 	char *start = "string literals";
 	char *end = " are cool\n";
 
-	strcatPersonal(start, end);
+	printf("%s", strcatPersonal(start, end));
 }
